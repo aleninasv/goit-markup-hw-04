@@ -5,6 +5,7 @@
   --accent-color: #2196f3;
   --background-dark: #2f303a;
   --background-light: #f5f4fa;
+  --social-icons-main: #afb1b8;
 }
 * {
   box-sizing: border-box;
@@ -50,8 +51,6 @@ body a {
 .header-container {
   display: flex;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .logo {
   margin-right: 93px;
@@ -77,6 +76,8 @@ body a {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 /*--LOGO STYLE--*/
 .logo {
@@ -108,10 +109,15 @@ body a {
 .contacts-link {
   color: var(--text-color);
   margin-bottom: -4px;
+  fill: var(--text-color);
+}
+.header-svg {
+  margin-right: 10px;
 }
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
   cursor: pointer;
 }
 /*--END OF HEADER STYLES--*/
@@ -150,7 +156,7 @@ body a {
   margin-left: auto;
   margin-right: auto;
 }
-
+/*--END OF HERO SECTION STYLE--*/
 /*--FEATURES SECTION STYLE--*/
 .features-section {
   padding-top: 94px;
@@ -160,8 +166,25 @@ body a {
   display: flex;
   justify-content: space-between;
 }
-.features-list:not( :last-child) {
+.features-list:not(:first-child) {
   margin-left: 30px;
+}
+.features-image {
+  display: block;
+  background-color: var(--background-light);
+  width: 270px;
+  height: 120px;
+  padding-left: 100px;
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+}
+.features-description {
+  padding-top: 30px;
+}
+.features-icon {
+  width: 70px;
+  height: 70px;
 }
 .features-title {
   color: var(--title-color);
@@ -182,6 +205,7 @@ body a {
   max-width: 270px;
   text-align: left;
 }
+/*--END OF FEATURES SECTION STYLE--*/
 /*--OUR SERVICES SECTION STYLE--*/
 .services-section {
   padding-bottom: 94px;
@@ -199,6 +223,7 @@ body a {
   text-align: center;
   margin-bottom: 50px;
 }
+/*--END OF OUR SERVICES SECTION STYLE--*/
 /*--OUR TEAM SECTION STYLE--*/
 .team-section {
   padding-top: 94px;
@@ -222,7 +247,9 @@ body a {
   margin-top: 30px;
 }
 .team-member {
+  padding-left: 32px;
   padding-top: 30px;
+  padding-right: 32px;
   padding-bottom: 30px;
 }
 .team-name {
@@ -237,6 +264,27 @@ body a {
   font-size: 16px;
   font-weight: 400;
   text-align: center;
+  margin-bottom: 16px;
+}
+.social-icons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+    }
+.social-link-teammember {
+  display: flex;
+  background-color: #ffffff;
+  fill: var(--social-icons-main);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+}
+.social-link-teammember:hover,
+.social-link-teammember:focus {
+  fill: var(--accent-font-color);
+  background-color: var(--accent-color);
 }
 /*--FOOTER STYLE--*/
 .page-footer {
